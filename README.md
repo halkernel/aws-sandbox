@@ -18,7 +18,7 @@ This repository is focused on create the sandbox using `docker-compose` and `aws
 **Starting the container**:
 
 ```zsh
-docker-compose up
+env TMPDIR=/private$TMPDIR docker-compose up
 ```
 **Checking health**: `curl http://localhost:4566/health` should return:
 ``` json
